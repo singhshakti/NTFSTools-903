@@ -30,5 +30,13 @@ public class AppTest {
     	int actual = app.sum(0, 0);
     	assertEquals(excepted, actual);   
     }
+    
+    @Test
+    public void testSumWithNeg() {
+    	App app = new App();
+    	int excepted = -100;
+    	int actual = app.sum(-200, 100);
+    	assertEquals(excepted, actual);   
+    }
 	
 }
